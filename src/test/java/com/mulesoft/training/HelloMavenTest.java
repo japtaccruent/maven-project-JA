@@ -13,7 +13,7 @@ public class HelloMavenTest extends FunctionalTestCase {
 	
     @Test
     public void mavenFlowReturnsHelloMaven() throws Exception {
-    	System.out.print("\n\n-----> Dynamic Port used in Test Case #1" + dynamicPort.getNumber() + "\n\n");
+    	System.out.print("\n\n-----> Dynamic Port used in Test Case #1: " + dynamicPort.getNumber() + "\n\n");
         runFlowAndExpect("mavenFlow", "Hello Maven");
     }
     
